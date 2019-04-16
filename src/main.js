@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// import './element-variables.scss'
+import '../theme/index.css'
+
 import {
   Pagination,
   Dialog,
