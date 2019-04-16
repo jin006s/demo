@@ -1,14 +1,15 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}--- {{this.$store.state.count}} ----{{this.$store.getters.computedCount}}</h1>
-    <button @click="incCount()">增加数量+</button>
+    <!-- <button @click="incCount()">增加数量+</button> -->
+    <el-button type="primary" @click="incCount()">增加数量</el-button>
   </div>
 </template>
 
 <script>
   import request from '../request'
   import store from '@/vuex/store.js'
-
+  
   export default {
     name: 'HelloWorld',
     data () {
